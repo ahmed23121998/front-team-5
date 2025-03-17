@@ -1,0 +1,34 @@
+import React, { Component } from 'react';
+import { Container, Row, Col, Button } from 'react-bootstrap';
+
+class Header extends Component {
+    render() {
+        return (
+            <Container fluid className="p-0 position-relative" style={{ overflow: "hidden", height: "100vh" }}>
+                <img
+                    src="data:image/jpeg;base64,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"
+                    alt="Home Slider"
+                    className="img-fluid position-absolute w-100 h-100"
+                    style={{ objectFit: "cover", top: 0, left: 0, zIndex: 1 }}
+                />
+
+                <Row className="h-100 position-relative" style={{ zIndex: 2 }}>
+                    <Col className="d-flex flex-column align-items-center justify-content-center text-white text-center px-4"
+                        style={{ backgroundColor: "rgba(0, 0, 0, 0.5)", borderRadius: "10px", padding: "20px" }}>
+                        <h1 className="home_slider_title">Discover a New Era of Online Shopping</h1>
+                        <p className="home_slider_subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <Button variant="success" className="home_button mt-2">Shop Now</Button>
+                    </Col>
+                </Row>
+            </Container>
+        );
+    }
+}
+
+export default Header;
+
+
+
+
