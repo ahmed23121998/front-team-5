@@ -1,8 +1,13 @@
 import React from 'react'
 
-const New = () => {
+function New() {
   return (
+    <>
+    <div>New</div>
+    <h1>new component</h1>
+    </>
     
+
   )
 }
 
