@@ -65,6 +65,14 @@ function Login() {
                     onChange={handle}
                     placeholder="Password"
                 />
+                <input
+                    type="text"
+                    className={`form-control ${errors.passwordError ? "border-danger" : ""}`}
+                    name="password"
+                    value={loginForm.password}
+                    onChange={handle}
+                    placeholder="text"
+                />
                 <div className="text-danger">{errors.passwordError}</div>
 
                 <button

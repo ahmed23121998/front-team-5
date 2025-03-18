@@ -27,6 +27,8 @@ const TodoApp = () => {
   const deleteTask = (id) => {
     setTasks(tasks.filter(task => task.id !== id));
   };
+
+  
   
   return (
     <div className="container mt-5">
@@ -52,6 +54,13 @@ const TodoApp = () => {
                   onClick={handleAddTask}
                 >
                   Add
+                </button>
+                <button 
+                  className="btn btn-light" 
+                  type="button" 
+                  onClick={handleAddTask}
+                >
+                  delete
                 </button>
               </div>
             </div>
