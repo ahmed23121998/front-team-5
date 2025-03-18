@@ -8,19 +8,20 @@ import SignUp from './components/SignUp/SignUp'
 import Login from './components/Login/Login'
 import TodoApp from './components/ToDo/ToDo'
 import SignUpForm from './components/SignUp/SignUpForm'
+
 function App() {
   return (
     <>
-      {/* <Header/>
+      {/* <Marina/> */}
+      <Header/>
       <Aboutme/>
       <Skills/>
       <Portfolio/>
-      <Footer/> */}
-      {/* <Login/> */}
-      {/* <SignUp/> */}
       <SignUpForm/>
       <TodoApp/>
-      
+      <Footer/>
+      {/* <Login/> */}
+      {/* <SignUp/> */}
     </>
   )
 }
